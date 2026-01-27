@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/book.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html"><img src="./img/svg/logo.svg" alt="logo"></a>
+        <nav>
+            <a href="#">Акции</a>
+            <a href="#">Бронирование</a>
+            <a href="#">Личный кабинет</a>
+        </nav>
+    </header>
+    <section>
+        <h1>Бронирование автомобиля</h1>
+        <div class="book_class">
+            <div class="cars">
+                <div class="selected_car">
+                    <img src="./img/cars/red-lamba.png" alt="Ferrari 599 GTB">
+                    <p>Ferrari 599 GTB</p>
+                    <p class="premium_class">Премиум</p>
+                    <p>40 р/мин</p>
+                </div>
+                <div>
+                    <img src="./img/cars/2012-toyota-corolla-2011-toyota-corolla-le-car-png-favpng-cwC5mkwy8k3BnFJ1ZaTU9wP9d.jpg" alt="Toyota Corolla">
+                    <p>Toyota Corolla</p>
+                    <p class="econom_class">Эконом</p>
+                    <p>20 р/мин</p>
+                </div>
+                <div>
+                    <img src="./img/cars/2017-toyota-yaris-2018-toyota-yaris-2016-toyota-yaris-car-png-favpng-gU5GgcATu1A1GhuELH81Piikh.jpg" alt="Toyota Yaris">
+                    <p>Toyota Yaris</p>
+                    <p class="econom_class">Эконом</p>
+                    <p>18 р/мин</p>
+                </div>
+                <div>
+                    <img src="./img/cars/black-honda.png" alt="Acura NSX">
+                    <p>Acura NSX</p>
+                    <p class="premium_class">Премиум</p>
+                    <p>30 р/мин</p>
+                </div>
+                <div>
+                    <img src="./img/cars/BMW-Car-Png-image-copy.jpg" alt="BMW X3">
+                    <p>BMW X3</p>
+                    <p class="premium_class">Премиум</p>
+                    <p>25 р/мин</p>
+                </div>
+                <div>
+                    <img src="./img/cars/grey-mers.png" alt="Mercedes Kakoyta">
+                    <p>Mercedes Kakoy-ta</p>
+                    <p class="premium_class">Премиум</p>
+                    <p>25 р/мин</p>
+                </div>
+                <div>
+                    <img src="./img/cars/orange-huynday.png" alt="Hyundai Creta">
+                    <p>Hyundai Creta</p>
+                    <p class="econom_class">Эконом</p>
+                    <p>20 р/мин</p>
+                </div>
+            </div>
+            <div class="selected_car_section">
+                <h2>Данные о выбранном автомобиле</h2>
+                <div class="selected_car_info">
+                    <p>VIN-Номер: <span>WVGZZZ00000000000</span></p>
+                    <p>Марка: <span>Ferrari</span></p>
+                    <p>Модель: <span>599 GTB</span></p>
+                    <p>Номер: <span>А001МР</span></p>
+                    <p>Стоимость бронирования за день: <span>7000р.</span></p>
+                    <p>Филиал: <span>Южный</span></p>
+                </div>
+            </div>
+            <div class="client_section">
+                <h2>Данные о клиенте</h2>
+                <form class="client_info">
+                    <label>
+                        <span>Фамилия:</span>
+                        <input type="text">
+                    </label>
+                    <label>
+                        <span>Имя:</span>
+                        <input type="text">
+                    </label>
+                    <label>
+                        <span>Отчество:</span>
+                        <input type="text">
+                    </label>
+                    <label>
+                        <span>Номер телефона:</span>
+                        <input type="tel">
+                    </label>
+                    <label>
+                        <span>Паспортные данные:</span>
+                        <input type="text">
+                    </label>
+                    <label>
+                        <span>Дата рождения:</span>
+                        <input type="date">
+                    </label>
+                </form>
+            </div>
+            <div>
+                <h2>Выберите даты бронирования</h2>
+                <div>
+                    <p>Дата бронирования: <input type="date"></p>
+                    <p>Дата возврата: <input type="date"></p>
+                    <p>Ваша скидка<span>*</span> составляет - 5%</p>
+                    <p>* - За каждые 3 дня брони добавляется скидка, равная 5%. Максимальная скидка - 25%</p>
+                </div>
+            </div>
+            <div>
+                <h2>Выберите банковскую карту</h2>
+                <div>
+                    <div>
+                        <img>
+                        <p>Visa ●●●● 4251</p>
+                        <p>Основная карта</p>
+                        <input type="radio" name="rad_btn">
+                    </div>
+                    <div>
+                        <img>
+                        <p>МИР ●●●● 1523</p>
+                        <p>Дополнительная карта</p>
+                        <input type="radio" name="rad_btn">
+                    </div>
+                    <div>
+                        <img>
+                        <p>Mastercard ●●●● 3322</p>
+                        <p>Кредитная карта</p>
+                        <input type="radio" name="rad_btn">
+                    </div>
+                    <div>
+                        <p>Добавить карту</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button>Забронировать</button>
+                <button>Добавить</button>
+                <button>Оформить</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <label>
+            <p>Свяжитесь с нами</p>
+            <p>8 (800) 111-11-11</p>
+        </label>
+        <nav>
+            <a href="#">Акции</a>
+            <a href="#">Бронирование</a>
+            <a href="#">Личный кабинет</a>
+        </nav>
+    </footer>
+</body>
+</html>
