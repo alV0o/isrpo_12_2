@@ -19,6 +19,10 @@ h1, h2, h3{
     src: url("../fonts/GoshaSans-Regular.otf");
 }
 
+body{
+    background-color: #f5f5f5;
+}
+
 header{
     background-color: black;
     height: 100px;
@@ -27,6 +31,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0 75px;
+    position: relative;
 }
 
 header img{
@@ -102,7 +107,6 @@ footer nav a:hover{
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
     width: 100%;
-    padding: 20px;
 }
 .cars .selected_car{
     box-shadow: 0 2px 8px #1abc9c;
@@ -168,7 +172,6 @@ footer nav a:hover{
     border-radius: 5px;
 }
 
-
 .cars div p:last-of-type{
     font-size: 22px;
     font-weight: bold;
@@ -177,55 +180,174 @@ footer nav a:hover{
 section{
     min-height: 50vh;
     padding: 50px 75px;
+    display: flex;
+    gap:35px;
 }
 
 .book_class{
+    background-color: white;
     display: flex;
     flex-direction: column;
     border-radius: 25px;
+    gap:20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
     padding: 50px;
 }
 
-.selected_car_section{
+.data_section{
     display: flex;
     flex-direction: column;
     gap:20px;
     background-color: #1a1a1a;
     border-radius: 25px;
-    margin:0 200px;
     padding: 50px;
     align-items: center;
+    box-shadow: 0 2px 10px #1a1a1a;
 }
 
-.selected_car_section h2{
+.data_section h2{
     color: white;
 }
 
-.selected_car_info{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.data_info{
+    display: flex;
+    flex-direction: column;
     gap:25px;
 }
 
-.selected_car_info p{
+.data_info p, .data_info input, .date_book_info p{
     background-color: #bdc3c7;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 10px #929292;
 }
 
-.selected_car_info p span{
-    color: rgb(245, 239, 239);
+.data_info p span{
+    color: #0e8a71;
+    font-weight: bold;
 }
 
-.client_section{
+.data_info input{
+    border: none;
+    font-size: 18px;
+}
+
+.date_book_info{
     display: flex;
     flex-direction: column;
-    gap:20px;
-    background-color: #1a1a1a;
-    border-radius: 25px;
-    margin:0 200px;
-    padding: 50px;
+    gap: 20px;
+}
+
+.date_book_info p:last-of-type{
+    background: none;
+    padding: 0;
+    border-radius: none;
+    box-shadow: none;
+    color: #929292;
+}
+
+.date_book_info p span{
+    color: #bc1a1a;
+}
+
+.date_book_info input{
+    border: none;
+    background-color: #bdc3c7;
+    font-size: 18px;
+    align-items: end;
+    color: #0e8a71;
+    border-bottom: 2px solid #0e8a7150;
+}
+
+.date_book_info input[type=date]::-webkit-calendar-picker-indicator {
+    filter: invert(0.4);
+}
+ 
+.card_style{
+    background-color: #16a085;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-between;
+    gap: 10px;
     align-items: center;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+
+.card_style:hover{
+    background-color: #0e8a71;
+    box-shadow: 0 2px 10px #16a085;
+    transform: translateY(-3px);
+}
+
+.card_style input{
+    transform:scale(1.5);
+    accent-color: #0e8a71;
+}
+
+.card_style img{
+    width: 50px;
+    background-color: #f0efef;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.sidebar{
+    background-color: white;
+    height: fit-content;
+    width: 40vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    gap:20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+}
+
+.sidebar h1:first-of-type{
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+}
+
+.new_card{
+    background:none;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    color: #0e8a71;
+    border: #0e8a71 2px dashed;
+    transition: 0.3s ease;
+}
+
+.new_card:hover{
+    background-color: #1abc9c50;
+    transform: translateY(-3px);
+}
+
+.btns{
+    background-color: #16a085;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    color:#1a1a1a;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btns:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 1px 10px #0e8a71;
+    background-color: #0e8a71;
+    color: #1a1a1a;
 }
